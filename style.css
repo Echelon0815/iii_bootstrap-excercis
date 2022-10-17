@@ -1,0 +1,22 @@
+/*any-link 代表點擊前和點擊後*/
+a,a:hover,a:any-link,a:active {
+    text-decoration: none;
+    color:inherit
+}
+
+/*BS 預設沒有 負數的margin*/
+
+#wrapper {
+    background-image: url(./asset/bg-desktop.png);
+    background-repeat: no-repeat;
+}
+
+/*NavBar*/
+
+.nav-brand {
+    font-family: 'Raleway',sans-serif;
+    font-weight: 900;
+    /*figma裡面的字體大小很亂，有沒有自動改變的方法?*/
+}
+
+
