@@ -16,7 +16,7 @@
 <body>
         <nav class="navbar px-0"> <!--不調整整個 Navbar 的padding-->
             <div class="container-fluid px-3"> <!--調整內容容器的paddding-->
-                <a href="" class="navbar-brand w-sm-50"><img src="./asset/mail.png" alt="" class="d-inline-block align-text-middle main-logo mt-">Ninjamail</a>
+                <a href="" class="navbar-brand w-sm-50"><img src="./asset/mail.png" alt="" class="brand-logo d-inline-block align-text-middle main-logo mt-">Ninjamail</a>
                 <!-- <div class="nav-links-box d-flex justify-content-end w-50">
                     <a href="" class="nav-item text-uppercase px-3">features</a>
                     <a href="" class="nav-item text-uppercase px-3">pricing</a>
@@ -122,77 +122,86 @@
                 </div>
             </div>
         </section>
-</div>
         <section id="email-form" class="out-of-wrapper email-form">
             <div class="container-fluid">
                 <h1>Learn how others are reaching their audience easier than ever before.</h1>
                 <div class="row justify-content-center">
                     <input type="email" name="email-address" class="col-12" placeholder="Enter your email">
                     <a href="" class="text-uppercase text-center">join our list</a>
+                    <p class="jsMsg d-none">Thanks! Email received.</p>
                 </div>
             </div>
         </section>
-        <section id="" class="">
-            <div class="container-fluid">
-                <h1></h1>
-                <div class="row">
-                    <img src="" alt="" class="col">
-                    <img src="" alt="" class="col">
-                    <img src="" alt="" class="col">
-                    <img src="" alt="" class="col">
-                    <img src="" alt="" class="col">
-                </div>
-            </div>
-        </section>
-        <section>
+        <section id="companies" class="companies">
             <div class="container-fluid text-center">
-                <h1>Get started today!</h1>
+                <h1>All the best brands
+                    already use us.</h1> 
+                    <!--row-cols-2 有 "s" 不要打錯-->
+                <div class="container-fluid row row-cols-2 w-100 justify-content-center">
+                    <div class="logo logo1 col">
+                        <img src="./asset/Logo1.png" alt="">
+                    </div>
+                    <div class="logo logo2 col">
+                        <img src="./asset/Logo2.png" alt="">
+                    </div>
+                    <div class="logo logo3 col">
+                        <img src="./asset/Logo3.png" alt="">
+                    </div>
+                    <div class="logo logo4 col">
+                        <img src="./asset/Logo4.png" alt="">
+                    </div>
+                    <div class="logo logo5 col">
+                        <img src="./asset/Logo5.png" alt="">
+                    </div>
+                </div>
             </div>
-            <a href="" class="text-uppercase">pick a plan</a>
         </section>
-        <footer>
-            <div class="container-fluid">
-                    <div class="row">
-                        <img src="" alt="" class="col-6 d-inline-block">
-                        <div class="col-6">
-                            <ul class="">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+</div>
+
+        <section id="today" class="today">
+                <div class="d-flex justify-content-center align-content-center flex-wrap text-center h-100 w-100 px-2">
+                <h1 class="w-100 flex-shrink-0">Get started today!</h1>
+                <a href="" class="text-uppercase d-inline-block">pick a plan</a>
+                </div>
+        </section>
+        <footer class="footer mt-5">
+            <div class="container-fluid px-3">
+                <a href="" class="w-50 d-inline-block "><img src="./asset/mail.png" alt="" class="brand-logo d-inline-block align-text-middle main-logo mt-">Ninjamail</a>
+                    <div class="row"> <!--先用grid覆蓋 之後再用col-->
+                        <div class="row mobile-grid">
+                            <ul class="col list-unstyled order-1">
+                                <li><a href="">Features</a></li> 
+                                <li><a href="">Pricing</a></li>
+                                <li><a href="">Services</a></li>
+                                <li><a href="">Partners</a></li>
                             </ul>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul class="col list-unstyled mobile-grid-margin-1 order-3">
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Tutorials</a></li>
+                                <li><a href="">Resources</a></li>
+                                <li><a href="">Help Center</a></li>
+                                <li><a href="">Templates</a></li>
+                                <li><a href="">Case Studies</a></li>
                             </ul>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul class="col list-unstyled order-2">
+                                <li><a href="">Medium</a></li>
+                                <li><a href="">Twitter</a></li>
+                                <li><a href="">Facebook</a></li>
+                                <li><a href="">Instagram</a></li>
+                                <li><a href="">LinkedIn</a></li>
                             </ul>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <ul class="col list-unstyled order-4 mobile-grid-margin-2">
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">Slack</a></li>
+                                <li><a href="">Jobs</a></li>
                             </ul>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+
                         </div>
                     </div>
-                    <div class="row">
-                        <p></p>
-                        <a href=""></a>
-                        <a href=""></a>
+                    <div class="row policies">
+                        <p>NinjaMail is a sample project for Quest AI.<br>© 2019 Quest AI, All rights reserved.</p>
+                        <a href="">Terms & Conditions</a>
+                        <a href="">Privacy Policy</a>
                     </div>
             </div>
         </footer>

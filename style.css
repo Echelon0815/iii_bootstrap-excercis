@@ -28,7 +28,7 @@ a,a:hover,a:any-link,a:active {
 
     /*figma裡面的字體大小很亂，有沒有自動改變的方法?*/
 }
-.navbar-brand>img {
+.brand-logo {
     width: 84px; /*給手機用的 比較小*/
     margin: -15px; /*拉近圖與字的紀離 因為bs預設沒有 負數margin*/
 }
@@ -176,3 +176,67 @@ a,a:hover,a:any-link,a:active {
     height: 42px;
     margin-top: 15px; /*按照手機板*/
 } 
+/*companies section  css*/
+.companies img {
+    max-width: 100%;
+}
+.companies div h1 {
+    font-family: 'Playfair Display' sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 36px;
+}
+/*today section css*/
+.today {
+    background-color: var(--green);
+    height: 290px;
+}
+.today h1 {
+    color:white;
+    font-family: Playfair Display;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 48px;
+}
+.today a {
+    background-color: white;
+    color:var(--green);
+    width: 130px;
+    height: 41px;
+    font-family: Raleway;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 2.5rem;
+}
+
+/*footer css*/
+
+.footer .brand-logo {
+    width: 84px; /*給手機用的 比較小*/
+    margin: -15px; /*拉近圖與字的紀離 因為bs預設沒有 負數margin*/
+}
+.footer .mobile-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.footer .mobile-grid-margin-1 {
+    margin-top: -2.5rem;
+}
+.footer .mobile-grid-margin-2 {
+    margin-top: -1rem;
+}
+.footer li {
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.footer .policies {
+    border-top: 1px solid #DBDBDB;
+}
+.footer .policies p,.policies a {
+    font-family: Raleway;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 19px;
+}
