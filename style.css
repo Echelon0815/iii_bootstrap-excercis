@@ -47,7 +47,7 @@ a,input,p,li,h2{
 
 .navbar-brand span {
     /*手機用*/
-    font-family:'Playfair Display',sans-serif;;
+    font-family:'Raleway',sans-serif;;
     font-size: 22px;
     line-height: 26px;
     margin-left:-18px
@@ -58,11 +58,14 @@ a,input,p,li,h2{
     margin-left:-25px ; /*拉近圖與字的紀離 因為bs預設沒有 負數margin*/
     margin-bottom: -3px;
 }
-.nav-items > a {
+.nav-link {
+    font-weight: 800;
+}
+.nav-link {
     position: relative;
 }
 
-.nav-items >a:hover::after {
+.nav-link:hover::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -72,7 +75,7 @@ a,input,p,li,h2{
     background-color: var(--green);
 }
 .nav-btn>a{
-    width: 100px;
+    width: 104px;
     height: 25px;
     border-radius: 0;
     background-color:var(--green);
@@ -91,18 +94,7 @@ a,input,p,li,h2{
     margin-top:66px;
     background-position: top center;
 }
-@media screen and (min-width:768px) {
-    #wrapper{
-    background-image: url(./asset/bg-tablet.png);
-    background-position: top center;
-    }
 
-}
-@media screen and (min-width:1200px) {
-    #wrapper{
-    background-image: url(./asset/bg-desktop.png);
-    background-position: top center;
-}}
 /* hero 主頁 css*/
 
 .text-stack h1{
@@ -127,7 +119,8 @@ a,input,p,li,h2{
     z-index: 0;
     max-width: 445px;
     width: 100%;
-    top:40%
+    top:13%;
+    left:.5%;
 }
 .hero .text-stack {
     z-index: 1;
@@ -179,6 +172,12 @@ a,input,p,li,h2{
     /*固定寬高*/
     height: 330px;
     border-radius: 0;
+}
+.card1 {
+    float:left;
+}
+.card2 {
+    float:right;
 }
 .card-img-top {
     border-radius: 0;
@@ -268,7 +267,8 @@ a,input,p,li,h2{
     line-height: 36px;
 }
 .companies img {
-    max-width: 150px;
+    max-width: 120px;
+    object-fit:contain;
 }
 
 /*today section css*/
@@ -343,4 +343,117 @@ h1:has(+a:hover) {
 }
 .footer li>a:hover,.policies>a:hover {
     color:var(--hoverGreen);
+}
+
+@media screen and (min-width:768px) {
+    #wrapper{
+    background-image: url(./asset/bg-tablet.png);
+    background-position: top center;
+    }
+        /*nav*/
+        .nav-link {
+            font-size: 13px;
+        }
+        /*hero*/
+        .text-stack {
+            width: 46%;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        .hero img {
+            left:40vw;
+        }
+        /*video*/
+        .video h1{
+            font-size: 6vw;
+        }
+        .video a {
+            width: 24vw;
+            height: 5vw;
+            font-size: 2vw;
+            line-height: 2.6;
+            max-width: 15vw;
+        }
+        /*intro*/
+        .card {
+            float: none;
+            width: 25%;
+            height: auto;
+        }
+        .card1{
+            margin-top: -5vw !important;
+        }
+        .intro-text {
+            width: 40%;
+        }
+        /*member*/
+        .member div.position-relative {
+            margin-left: 1vw;
+            margin-right: 1vw;
+            flex-grow: 0;
+        }
+        /*email-form*/ 
+        .email-form  h1{
+            width: 70%;
+            font-size: 28px;
+            line-height: 36px;
+            text-align: center;
+            max-width: 578px;
+        }
+        .email-form input {
+            min-width: 275px;
+        }
+        .email-form .reusable-button {
+            margin-top: 0;
+        }
+        .email-form #hidden-Msg {
+            font-size: 13px;
+            line-height: 15px;
+        }
+        /*companies*/ 
+        .companies h1{
+            font-size: 28px;
+            line-height: 36px;
+            display: inline-block;
+            max-width: 250px;
+        }
+        /*today*/
+        .today  h1{
+            font-size: 42px;
+            line-height: 56px;
+        }
+        /*footer*/
+        .footer-brand {
+            width: 50%; 
+        }
+        .footer .mobile-grid {
+            width: 100%;
+            grid-template-columns: repeat(4,1fr)        
+        }
+        .footer ul {
+            order:unset !important;
+        }
+}
+@media screen and (min-width:1200px) {
+    #wrapper{
+    background-image: url(./asset/bg-desktop.png);
+    background-position: top center;
+    }
+    /*navbar*/
+    .navbar-brand {
+        font-size: 35px;
+        line-height: 41px;
+    }
+    .nav-btn a {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .nav-link {
+        font-size: 17;
+        line-height: 20px;
+    }
+    /*hero*/
+    .hero p {
+
+    }
 }

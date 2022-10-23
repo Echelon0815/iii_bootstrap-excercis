@@ -33,25 +33,26 @@
         </nav>
 <div id="wrapper" class="position-relative"> <!--容器的z-index是負數時，會無法點擊-->
         <section id="hero" class="hero">
-            <div class="container-fluid position-relative">
-                <div class="text-stack position-relative"><!--用vstack 和 gap 不好控制h1和p之間的距離-->
+            <div class="container-fluid position-relative px-md-5 "> <!--這裡的relative是給圖片用的-->
+                <div class="text-stack position-relative d-md-flex flex-md-column justify-content-md-center h-100"><!--用vstack 和 gap 不好控制h1和p之間的距離-->
                     <h1 class="d-block">Create Stunning 
                         Email 
                         Campaigns</h1>
-                    <p>Create and launch email campaigns that 
+                    <p class="my-md-3">Create and launch email campaigns that 
                         captivate your customers in just a few clicks.</p>
-                        <div class=" text-center">
+                        <div class=" text-center text-md-start">
                             <a href="" class="text-uppercase text-center d-inline-block reusable-button">try now</a>
-                            <a href="" class="text-uppercase text-center d-inline-block reusable-button">get a demo</a>
+                            <a href="" class="text-uppercase text-center d-inline-block reusable-button ms-md-3">get a demo</a>
                         </div>
                 </div>
                 <!--使用z-index 改變 img的圖層 會影響到bg 為了使圖片和navbar的按鈕維持比例，只對他設定px-->
                 <!--圖片並不是在section的正中央，不能使用top去更改,BS只有0,50,100-->
-                <img src="./asset/photo_hero.png" alt="" class="position-absolute start-50 translate-middle px-2">
+                <!--調整position用的start,end,translate等等，沒有預設的breakpoints可以使用-->
+                <img src="./asset/photo_hero.png" alt="" class="position-absolute">
             </div>
         </section>
-        <section id="video" class="row video px-2"> <!--p-2給手機螢幕邊邊  -->
-            <div class="col-fluid position-relative text-center"> <!--螢幕大用col控制大小 螢幕小填滿-->
+        <section id="video" class="row video px-2 row"> <!--p-2給手機螢幕邊邊  -->
+            <div class="col-fluid col-md-10 mx-md-auto position-relative text-center "> <!--螢幕大用col控制大小 螢幕小填滿-->
                 <img src="./asset/VIDEO.png" alt="" class="img-fluid">
                 <div class="text position-absolute h-100 text-center top-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
                     <h1 class="mx-auto">Reach More Customer</h1>
@@ -60,22 +61,22 @@
             </div>
         </section>
         <section id="intro" class="intro">
-            <div class="container-fluid px-2 clearfix">
-                <div class="card card1 my-2 float-start">
+            <div class="container-fluid px-2 d-md-flex">
+                <div class="card card1 my-2 mx-md-4 align-self-start">
                     <img src="./asset/photo.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <p class="card-text">Launch campaigns but also find new customers. Our unique platform handles campaigns from start to end.</p>
                         <a href="" class="">Learn More</a>
                     </div>
                 </div>
-                <div class="card card2 float-end my-2"> <!--在card上面加上垂直的margin-->
+                <div class="card card2 my-2 mx-md-4"> <!--在card上面加上垂直的margin-->
                     <img src="./asset/photo_1.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <p class="card-text">Start building and sharing with your team today. NinjaMail is renowned for its industry leading team collaboration tools.</p>
                         <a href="" class="">Learn More</a>
                     </div>
                 </div>
-                <div class="intro-text p-4">
+                <div class="intro-text p-4 flex-md-grow-0">
                     <h1>The source for
                         proven, engaging 
                         email campaigns</h1>
@@ -90,22 +91,22 @@
             </div>
         </section>
         <section id="member" class="member">
-            <div class="container-fluid px-4"> 
-                <div class="col position-relative my-3">
+            <div class="container-fluid px-4 d-md-flex"> 
+                <div class=" position-relative my-3">
                     <div class="memberName position-absolute">
                         <h2>Frankie</h2>
                         <p>Member since 201<span>6</span></p>
                     </div>
                     <img src="./asset/photo_2.png" alt="">
                 </div>
-                <div class="col position-relative my-3">
+                <div class=" position-relative my-3">
                     <div class="memberName position-absolute">
                         <h2>Camile</h2>
                         <p>Member since 2012</p>
                     </div>
                     <img src="./asset/photo_3.png" alt="">
                 </div>
-                <div class="col position-relative my-3">
+                <div class=" position-relative my-3">
                     <div class="memberName position-absolute">
                         <h2>Elayne</h2>
                         <p>Member since 201<span>8</span></p>
@@ -115,11 +116,11 @@
         </section>
         
 </div>
-        <section id="email-form px-4" class="email-form">
-            <div class="container-fluid px-5">
-                <h1>Learn how others are reaching their audience easier than ever before.</h1>
+        <section id="email-form" class="email-form">
+            <div class="container-fluid px-5 d-md-flex flex-md-column ">
+                <h1 class="d-md-inline-block align-self-center my-md-3">Learn how others are reaching their audience easier than ever before.</h1>
                 <div class="row justify-content-center">
-                    <input type="email" name="email-address" class="col-12" placeholder="Enter your email">
+                    <input type="email" name="email-address" class="col-12 col-md-5 mx-md-3" placeholder="Enter your email">
                     <p id="hidden-Msg" class="collapse text-center">Thanks! Email received.</p>
                     <a class="text-uppercase text-center reusable-button" data-bs-toggle="collapse" href="#hidden-Msg" role="button">join our list</a>
                 </div>
@@ -130,7 +131,7 @@
                 <h1>All the best brands
                     already use us.</h1> 
                     <!--row-cols-2 有 "s" 不要打錯-->
-                <div class=" row row-cols-2  justify-content-center mt-3">
+                <div class=" row row-cols-2  row-cols-md-5 justify-content-center mt-3">
                     <!--使用d-flex讓logo在div裡置中-->
                     <div class="logo logo1 col d-flex  justify-content-center align-content-center my-3"> 
                         <img class="w-100" src="./asset/Logo1.png" alt="">
@@ -158,16 +159,16 @@
         </section>
         <footer class="footer mt-5">
             <div class="container-fluid px-3">
-                <a href="" class="w-50 d-inline-block footer-brand"><img src="./asset/mail.png" alt="" class="brand-logo d-inline-block align-text-middle main-logo mt-"><span>Ninjamail</span></a>
-                    <div class="row"> <!--先用grid覆蓋 之後再用col-->
+                <a href="" class="d-inline-block footer-brand text-md-center w-50"><img src="./asset/mail.png" alt="" class="brand-logo d-inline-block align-text-middle main-logo "><span>Ninjamail</span></a>
+                    <div class="row d-md-inline-block"> <!--先用grid覆蓋 之後再用col-->
                         <div class="row mobile-grid">
-                            <ul class="col list-unstyled order-1">
+                            <ul class="col list-unstyled order-1 px-md-0">
                                 <li><a href="">Features</a></li> 
                                 <li><a href="">Pricing</a></li>
                                 <li><a href="">Services</a></li>
                                 <li><a href="">Partners</a></li>
                             </ul>
-                            <ul class="col list-unstyled mobile-grid-margin-1 order-3">
+                            <ul class="col list-unstyled mobile-grid-margin-1 order-3 px-md-0 m-md-0">
                                 <li><a href="">About Us</a></li>
                                 <li><a href="">Tutorials</a></li>
                                 <li><a href="">Resources</a></li>
@@ -175,14 +176,14 @@
                                 <li><a href="">Templates</a></li>
                                 <li><a href="">Case Studies</a></li>
                             </ul>
-                            <ul class="col list-unstyled order-2">
+                            <ul class="col list-unstyled  px-md-0 order-2">
                                 <li><a href="">Medium</a></li>
                                 <li><a href="">Twitter</a></li>
                                 <li><a href="">Facebook</a></li>
                                 <li><a href="">Instagram</a></li>
                                 <li><a href="">LinkedIn</a></li>
                             </ul>
-                            <ul class="col list-unstyled order-4 mobile-grid-margin-2">
+                            <ul class="col list-unstyled order-4 mobile-grid-margin-2 px-md-0 m-md-0">
                                 <li><a href="">Contact Us</a></li>
                                 <li><a href="">Slack</a></li>
                                 <li><a href="">Jobs</a></li>
