@@ -354,6 +354,9 @@ h1:has(+a:hover) {
         .nav-link {
             font-size: 13px;
         }
+        .nav-btn >a {
+            height: auto;
+        }
         /*hero*/
         .text-stack {
             width: 46%;
@@ -362,6 +365,10 @@ h1:has(+a:hover) {
         }
         .hero img {
             left:40vw;
+        }
+        .hero h1 {
+            font-size: 4vw;
+            line-height: 5vw;
         }
         /*video*/
         .video h1{
@@ -385,6 +392,16 @@ h1:has(+a:hover) {
         }
         .intro-text {
             width: 40%;
+        }
+        .intro-text h1 {
+            font-size: 2vw;
+            line-height: 31px;
+        }
+        .intro-text p {
+            font-size: 1.5vw;
+            font-weight: 500;
+            line-height: 16px;
+            margin-top: 3vw;
         }
         /*member*/
         .member div.position-relative {
@@ -443,17 +460,55 @@ h1:has(+a:hover) {
     .navbar-brand {
         font-size: 35px;
         line-height: 41px;
-    }
-    .nav-btn a {
-        font-size: 17px;
-        line-height: 20px;
+        margin-left: 5vw;
     }
     .nav-link {
         font-size: 17;
         line-height: 20px;
     }
-    /*hero*/
-    .hero p {
-
+    .nav-btn {
+        margin-right:5vw;
     }
-}
+    /*hero*/
+    .hero h1 {
+        font-weight: 900;
+        font-size: 4vw;
+        line-height: 71px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .hero p {
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 26px;
+        padding-left: 3rem;
+        padding-right: 5rem;
+    }
+    /*兩個按鈕*/
+    .hero div.text-center {
+        padding-left: 3rem;
+        padding-right: 6rem;
+        text-align: center !important;
+    }
+    .hero img {
+        max-width: 620px;
+        top: 0;
+    }
+    /*video*/ 
+    .video h1 {
+        font-size: 60px;
+        line-height: 80px;
+    }
+    .video a {
+        font-size: 21px;
+        line-height: 25px;
+    }
+    /*intro*/
+    .card p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .card a {
+        font-size: 16px;
+        line-height: 19px;
+    }
