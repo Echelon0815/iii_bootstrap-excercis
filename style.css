@@ -494,15 +494,6 @@ h1:has(+a:hover) {
         max-width: 620px;
         top: 0;
     }
-    /*video*/ 
-    .video h1 {
-        font-size: 60px;
-        line-height: 80px;
-    }
-    .video a {
-        font-size: 21px;
-        line-height: 25px;
-    }
     /*intro*/
     .card p {
         font-size: 16px;
@@ -512,3 +503,4 @@ h1:has(+a:hover) {
         font-size: 16px;
         line-height: 19px;
     }
+}
